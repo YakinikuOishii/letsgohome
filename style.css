@@ -1,0 +1,145 @@
+.col-4 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    float: left;
+}
+
+.col-3 {
+    width: 70%;
+    padding: 5%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-1 {
+    width: 50%;
+    height: 30vh;
+    margin-top: 5vh;
+    float: left;
+    opacity:0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #150F4A;
+    font-family: "Houschka Rounded";
+    color: snow;
+    text-align: center;
+}
+
+img {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+header {
+    background-image:url(images/bgGOHOME.jpg);
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.float {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.checkpoint {
+    background-image: url(images/denisse-leon-368446-unsplash.png);
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+/*    padding: 100px;*/
+    color: snow;
+    font-family: "rounded-X M+ 1c";
+/*
+    padding-left:300px;
+    padding-right: 300px;
+*/
+    padding: 0px 20%;
+    text-align: center;
+}
+
+
+.homework{
+    margin-bottom: 5vh;
+}
+.homeworkwords{
+    margin-bottom: 5vh;
+}
+
+.parent{
+    height: 100vh;
+    position: relative;
+    background-color: #000020;
+}
+
+.clock{
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #e900ab;
+    text-shadow: 5px 8px 6px snow;
+    font-size: 300px;
+    letter-spacing: 7px;
+/*    font-family: "Houschka Rounded",Bold;*/
+}
+
+.music {
+    float: left;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.music iframe{
+    margin: 5%;
+    margin-top: 5%;
+}
+
+/*
+.youtube {
+    margin: 0%;
+    margin-right: 0px;
+}
+*/
+
+.music h5 {
+    font-family: "rounded-X M+ 1c";
+    display: inline-block;
+    padding: 0px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    width: 20%;
+}
+
+.line {
+    height: 250px;
+}
+

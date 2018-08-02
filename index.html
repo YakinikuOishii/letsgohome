@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eqe5gmy.css">
+</head>
+<body>
+   <header>
+   <div class="float">
+   <img src="images/logoGOHOME.png" >
+   </div>
+    </header>
+    
+    <div class="checkpoint">
+    <h1>- CHECK -</h1>
+<!--        <div class="save col-1" style="clear: both";>-->
+        <div class="save col-1">
+         <img src="images/command.png">
+        </div>
+        <div class="savewords col-1">
+         <h1 font-weight= 10px;>SAVE</h1>
+         <h2>command(windowsの人は<br>control)+Sで必ず保存！</h2>
+        </div>
+        
+       <div class="valuablewords col-1">
+            <h1 font-weight= 10px;>VALUABLE</h1>
+            <h2>貴重品を忘れないように<br>充電器や財布も気を付けて！</h2>
+        </div>
+        <div class="valuable col-1" >
+            <img src="images/phone.png" width= 350px;>
+        </div> 
+        
+        <div class="homework col-1" >
+            <img src="images/task.png" width= 350px;>
+        </div>
+        <div class="homeworkwords col-1">
+            <h1 font-weight= 10px;>HOMEWORK</h1>
+            <h2>次までにやることを確認<br>宿題がないか聞いてみよう！</h2>
+        </div>
+    </div>
+    
+    <div class="parent">
+       <h1>- TIME -</h1>
+        <div id="MyClockDisplay" class="clock" >
+        // js
+        <script>
+            function showTime(){
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+            if(h == 0){
+                h = 12;
+            }
+
+            if(h > 12){
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " ";
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+            }
+            showTime();
+        </script>
+        </div>  
+    </div>
+    
+    <div class="music">
+       <h1>- MUSIC -</h1>
+       
+       <div class="line">
+        <iframe src="https://www.youtube.com/embed/oY0kWz16Wuo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        
+        <iframe src="https://www.youtube.com/embed/IBkNKMB2phY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        
+         <iframe src="https://www.youtube.com/embed/vKq18KGwPNg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+       
+       </div>
+        
+        
+       <div>
+           <h5>セキスイハイムCM「あったかハイム」</h5>
+           <h5>木山裕策「home」</h5>
+           <h5>日本昔ばなし「にんげんっていいな」</h5>
+       </div>
+       
+       <div class="line">
+           <iframe src="https://www.youtube.com/embed/ESv0yCDFEpo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           
+           <iframe src="https://www.youtube.com/embed/brUWAlQsWMg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           
+           <iframe src="https://www.youtube.com/embed/ar2be-N74b4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       </div>
+       
+       <div>
+           <h5>「カントリーロード」</h5>
+           <h5>「蛍の光」</h5>
+           <h5>「今日の日はさようなら」</h5>
+       </div>
+       
+       
+        
+    </div>
+    
+</body>
+</html>
