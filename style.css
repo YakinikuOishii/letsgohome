@@ -19,11 +19,11 @@
     height: 30vh;
     margin-top: 5vh;
     float: left;
-    opacity:0;
 }
 
+
 body {
-    width: 100%;
+     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #150F4A;
@@ -38,8 +38,9 @@ img {
 
 h1 {
     font-size: 35px;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    margin: 0;
+    padding-top: 5vh;
+    
 }
 
 header {
@@ -66,7 +67,7 @@ header {
 
 .checkpoint {
     background-image: url(images/denisse-leon-368446-unsplash.png);
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     background-size: cover;
 /*    padding: 100px;*/
@@ -76,9 +77,23 @@ header {
     padding-left:300px;
     padding-right: 300px;
 */
-    padding: 0px 20%;
+    padding: 0px ;
     text-align: center;
+   
 }
+
+/*
+.save{
+    opacity : 0.1;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+}
+
+.save.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+*/
 
 
 .homework{
@@ -92,12 +107,13 @@ header {
     height: 100vh;
     position: relative;
     background-color: #000020;
+     
 }
 
 .clock{
     overflow: hidden;
     text-align: center;
-    margin: auto;
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,6 +122,7 @@ header {
     text-shadow: 5px 8px 6px snow;
     font-size: 300px;
     letter-spacing: 7px;
+    font-family: "03SmartFontUI";
 /*    font-family: "Houschka Rounded",Bold;*/
 }
 
@@ -129,7 +146,8 @@ header {
 */
 
 .music h5 {
-    font-family: "rounded-X M+ 1c";
+    font-family: "rounded-X M+ 1c",medium;
+    font-size: 15px;
     display: inline-block;
     padding: 0px;
     margin-right: 80px;
