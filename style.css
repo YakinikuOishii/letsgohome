@@ -19,8 +19,8 @@
     height: 30vh;
     margin-top: 5vh;
     float: left;
+    opacity : 0;
 }
-
 
 body {
      width: 100%;

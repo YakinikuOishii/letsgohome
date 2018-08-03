@@ -5,6 +5,7 @@
     <title>LetsGoHome</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/eqe5gmy.css">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
    <header>
@@ -15,6 +16,49 @@
     
     <div class="checkpoint">
     <h1>- CHECK -</h1>
+    
+    <script type="text/javascript">
+        $(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.col-1').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    </script>
+    
+<!--
+    <script src="js/jquery-3.3.1.min.js">
+        $(function(){
+    $(window).scroll(function (){
+        $('.col-1').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 200){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+});    
+    </script>
+-->
     
 <!--        <div class="save col-1" style="clear: both";>-->
         <div class="save col-1">
