@@ -8,13 +8,23 @@
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
+  
    <header>
+   <nav>
+     <li>: </li>
+      <li><a href="#checkpoint">CHECK</a></li>
+      <li> : </li>
+      <li><a href="time">TIME</a></li>
+      <li> : </li>
+      <li><a href="music">MUSIC</a></li>
+      <li> :</li>
+  </nav>
    <div class="float">
    <img src="images/logoGOHOME.png" >
    </div>
     </header>
     
-    <div class="checkpoint">
+    <section class="checkpoint" id="checkpoint">
     <h1>- CHECK -</h1>
     
     <script type="text/javascript">
@@ -66,9 +76,9 @@
             <h1 font-weight= 10px;>HOMEWORK</h1>
             <h2>次までにやることを確認、宿題がないか聞いてみよう！</h2>
         </div>
-    </div>
+    </section>
     
-    <div class="parent">
+    <section class="parent" id="time">
        <h1>- TIME -</h1>
         <div id="MyClockDisplay" class="clock" >
         // js
@@ -102,9 +112,9 @@
             showTime();
         </script>
         </div>  
-    </div>
+    </section>
     
-    <div class="music">
+    <section class="music" id="music">
        <h1>- MUSIC -</h1>
        
        <div class="line">
@@ -139,7 +149,7 @@
            <h5>「今日の日はさようなら」</h5>
        </div>
         
-    </div>
+    </section>
     
 </body>
 
