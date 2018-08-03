@@ -17,7 +17,7 @@
 .col-1 {
     width: 50%;
     height: 30vh;
-    margin-top: 5vh;
+    margin-top: 4vh;
     float: left;
     opacity : 0;
 }
@@ -40,7 +40,11 @@ h1 {
     font-size: 35px;
     margin: 0;
     padding-top: 5vh;
-    
+}
+
+h2 {
+    width: 300px;
+    margin-left: 215px;
 }
 
 header {
@@ -79,22 +83,7 @@ header {
 */
     padding: 0px ;
     text-align: center;
-   
 }
-
-/*
-.save{
-    opacity : 0.1;
-    transform : translate(0, 50px);
-    transition : all 500ms;
-}
-
-.save.scrollin {
-    opacity : 1;
-    transform : translate(0, 0);
-    }
-*/
-
 
 .homework{
     margin-bottom: 5vh;
