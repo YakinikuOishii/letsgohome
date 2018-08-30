@@ -22,35 +22,6 @@
     opacity : 0;
 }
 
-a {
-    text-decoration: none;
-    
-}
-
-a:link {color: snow; }
-a:visited { color: snow; }
-
-body {
-     width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #150F4A;
-    font-family: "Houschka Rounded";
-    color: snow;
-    text-align: center;
-}
-
-nav {
-    float: right;
-    margin-right: 20px;
-    padding-top: 13px;
-}
-
-li {
-display: inline;
-    margin: 0px 10px;
-}
-
 img {
     overflow: hidden;
 }
@@ -59,12 +30,13 @@ h1 {
     font-size: 35px;
     margin: 0;
     padding-top: 5vh;
-    font-family: "Houschka Rounded",medium;
+    font-family: 'Yu Gothic', sans-serif;
 }
 
 h2 {
     width: 300px;
-    margin-left: 215px;
+    text-align: left;
+/*    margin-left: 215px;*/
 }
 
 header {
@@ -81,6 +53,47 @@ header {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+.float pic {
+    position:relative;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:link {color: snow; }
+a:visited { color: snow; }
+
+
+/*
+nav {
+    margin-right: 20px;
+    padding-top: 13px;
+    position: absolute;
+    z-index:1px;
+	top:0px;
+	left:30px;
+    float: right;
+}
+
+li {
+    display: inline;
+    margin: 0px 10px;
+}
+*/
+
+
+body {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #150F4A;
+    font-family: 'Yu Gothic', sans-serif;
+    color: snow;
+    text-align: center;
 }
 
 @keyframes floating {
@@ -105,7 +118,49 @@ header {
 }
 
 .checkpoint h2 {
-    font-family: "rounded-X M+ 1c";
+    font-family: 'Yu Gothic', sans-serif;
+    font-size: 20px;
+}
+
+.save img{
+    float: right;
+    margin-right: 50px;
+}
+
+.valuable img{
+    float: left;
+}
+
+.homework img{
+    float: right;
+    margin-right: 50px;
+}
+
+.savewords h1{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.valuablewords h1{
+    text-align: right;
+    margin-right: 110px;
+}
+
+.homeworkwords h1{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.savewords h2{
+    margin-left: 50px;
+}
+
+.valuablewords h2{
+    margin-left: 350px;
+}
+
+.homeworkwords h2{
+    margin-left: 50px;
 }
 
 .homework{
@@ -158,8 +213,8 @@ header {
 */
 
 .music h5 {
-    font-family: "rounded-X M+ 1c",medium;
-    font-size: 15px;
+    font-family: 'Yu Gothic', sans-serif;
+    font-size: 13px;
     display: inline-block;
     padding: 0px;
     margin-right: 80px;
@@ -172,4 +227,5 @@ header {
 .line {
     height: 250px;
 }
+
 
